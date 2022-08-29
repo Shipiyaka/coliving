@@ -1,5 +1,6 @@
 .nav-li {
   transition: color 0.2s ease-in-out;
+  color: #000;
   &:not(:last-child) {
     margin-right: 40px;
   }
@@ -49,23 +50,24 @@
   padding: 4px 0;
   transition: all 0.1s ease-in-out;
   position: relative;
+  display: flex;
 
-  &:hover::after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: #fff;
-  }
+  // &:hover::after {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   height: 2px;
+  //   width: 100%;
+  //   background-color: #000;
+  // }
 
-  @media only screen and (max-width: 768px) {
-    color: #000;
+  // @media only screen and (max-width: 768px) {
+  //   color: #000;
 
-    &:hover {
-      color: #005140;
-    }
-  }
+  //   &:hover {
+  //     color: #005140;
+  //   }
+  // }
 }
 
 .burger-icon {
@@ -87,12 +89,15 @@
   cursor: pointer;
   padding: 0 10px 10px 10px;
   margin-right: -10px;
+  position: relative;
+  top: 5px;
+  height: 26px;
 }
 
 .burger-line {
   width: 30px;
   height: 2px;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   transition: 0.3s all;
 }
 
@@ -113,11 +118,14 @@
   transform: rotate(45deg);
   background: #005140;
   height: 2px;
+  top: 5px;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.third-line {
   transform: rotate(-45deg);
   background: #005140;
+  position: relative;
+  top: 5px;
 }
 
 #check-burger:checked ~ label .burger-span .burger-line.fourth-line {

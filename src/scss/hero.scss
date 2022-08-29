@@ -1,0 +1,95 @@
+.hero {
+  &__container {
+    background-image: url("@img/hero/bg.jpg");
+    position: relative;
+    height: calc(100vh - 72px);
+    min-height: 400px;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgb(0, 0, 0, 0.45);
+      z-index: 2;
+    }
+  }
+
+  &__banner {
+    position: relative;
+    z-index: 5;
+    height: 100%;
+    // padding-top: 250px;
+    // padding-bottom: 150px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    // max-width: 550px;
+    // margin-bottom: 100px;
+    margin-bottom: 20px;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 100px;
+      height: 2px;
+      background-color: #ba8c29;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-size: 25px;
+    line-height: 40px;
+    max-width: 650px;
+  }
+
+  &__text {
+    text-align: center;
+    color: #ffffff;
+
+    &::after {
+      display: inline-block;
+      content: "";
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background-image: url("@img/icons/arrow_down.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      top: 4px;
+      margin-left: 7px;
+    }
+  }
+
+  &__input {
+    width: 70%;
+  }
+
+  &__btn {
+    width: 30%;
+  }
+}
+
+.subscr {
+  height: 50px;
+  width: 80%;
+  display: flex;
+}
