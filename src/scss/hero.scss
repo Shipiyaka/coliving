@@ -3,7 +3,7 @@
     background-image: url("@img/hero/bg.jpg");
     position: relative;
     height: calc(100vh - 72px);
-    min-height: 400px;
+    min-height: 500px;
 
     &::after {
       display: inline-block;
@@ -54,7 +54,7 @@
   &__subtitle {
     font-family: "Montserrat";
     font-weight: 500;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-size: 25px;
     line-height: 40px;
     max-width: 650px;
@@ -81,6 +81,21 @@
 
   &__input {
     width: 70%;
+    padding-left: 35px;
+    // margin-right: 5px;
+    background-repeat: no-repeat;
+
+    &_email {
+      background-image: url("@img/icons/email.png");
+      background-size: 18px;
+      background-position: 10px 19px;
+    }
+
+    &_name {
+      background-image: url("@img/icons/user.png");
+      background-size: 15px 17px;
+      background-position: 10px 16px;
+    }
   }
 
   &__btn {
@@ -90,6 +105,6 @@
 
 .subscr {
   height: 50px;
-  width: 80%;
+  width: 100%;
   display: flex;
 }

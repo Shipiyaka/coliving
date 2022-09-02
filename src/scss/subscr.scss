@@ -1,0 +1,93 @@
+.sp-force-hide {
+  display: none;
+}
+.sp-form[sp-id="215461"] {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0px;
+  font-family: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.sp-form[sp-id="215461"] input[type="checkbox"] {
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
+}
+.sp-form[sp-id="215461"] .sp-form-fields-wrapper {
+  margin: 0 auto;
+  width: 620px;
+}
+.sp-form[sp-id="215461"] .sp-form-control {
+  background-color: #ffffff;
+  // border-color: #cccccc;
+  // border-style: solid;
+  border-width: 0px;
+  font-size: 15px;
+  padding-left: 35px;
+  padding-right: 8.75px;
+  border-radius: 0px;
+  height: 45px;
+  width: 100%;
+}
+// .sp-form[sp-id="215461"] .sp-field label {
+//   color: #444444;
+//   font-size: 13px;
+//   font-style: normal;
+//   font-weight: bold;
+// }
+.sp-form[sp-id="215461"] .sp-button-messengers {
+  border-radius: 0px;
+}
+.sp-form[sp-id="215461"] .sp-button {
+  border-radius: 0;
+  font-family: $font-family;
+  background-color: #0b482d;
+  color: #ffffff;
+  width: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Arial, sans-serif;
+  box-shadow: none;
+  height: 45px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    position: relative;
+    top: 0;
+    background-color: #137247;
+    transition: all 0.2s ease-in-out;
+  }
+}
+.sp-form[sp-id="215461"] .sp-button-container {
+  text-align: left;
+}
+
+.sp-form-horizontal .sp-element-container .sp-field {
+  padding: 0;
+  min-width: auto !important;
+
+  &:not(:last-child) {
+    padding-right: 2px;
+  }
+}
+
+.sp-form-control_email {
+  background-repeat: no-repeat;
+  background-image: url("@img/icons/email.png");
+  background-size: 18px;
+  background-position: 10px 14px;
+  min-width: 215px;
+}
+
+.sp-form-control_name {
+  background-repeat: no-repeat;
+  background-image: url("@img/icons/user.png");
+  background-size: 15px 17px;
+  background-position: 10px 11px;
+  min-width: 145px;
+}
